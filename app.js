@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 
 
-// Getting or retriving all tasks.
+// Getting or retriving all tasks from database.
 app.get('/Tasks',async (req,res)=>{
     try{
         const Tasks = await Task.find();
